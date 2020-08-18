@@ -3,7 +3,17 @@ $(document).ready(function () {
     // Evento click en 'donwload'
     $("#btnDonwload").click(function () {
         // Recoge URL y añade cadena para obtener JSON con metadatos
-        let URL = $('#inputUrl').val() + '?__a=1';
+        var URL = $('#inputUrl').val();
+
+        // Se ha copiado desde el móvil y tiene un parámetro más ('?igsh....')
+       if(URL.split('/').length == 6){
+             URL = URL.split('/'); // Divide
+             URL.pop(); // Elimina el último parámetro
+             URL = URL.join('/'); // Recrea la cadena
+        }
+
+        // Finalmente añade el parámetro de acceso al JSON
+        URL += '?__a=1';
 
 
         // Recoge JSON
@@ -17,7 +27,7 @@ $(document).ready(function () {
 
 
             window.location.href = link;
-           
+
         })
             .fail(() => {
                 alert("The URL you provided is invalid.")
