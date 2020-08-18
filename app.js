@@ -20,11 +20,9 @@ $(document).ready(function () {
            
         })
             .fail(() => {
-                alert(`La URL introducida no es correcta.`)
+                alert("The URL you provided is invalid.")
             })
 
     });
-
-
 
 });

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>InstagramDownloader</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="png" href="ico.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="appOF.js"></script>
+</head>
+
+<body>
+
+    <div class="container text-center">
+
+        <form class="form">
+            <div class="mt-4">
+                <h1 class="display-3 mt-5 mb-3">Instagram Downloader</h1>
+            </div>
+
+            <div class="form-label-group text-center">
+                <input type="text" id="inputUrl" class="form-control mt-5"
+                    placeholder="https://www.instagram.com/p/CDv_h_mC-VZ/" required="" autofocus="">
+            </div>
+
+            <button class="btn btn-lg btn-primary mt-3 " type="button" id="btnDonwload">Download</button>
+
+        </form>
+
+    </div>
+
+    <footer class="text-center text-muted mt-5 mb-3">
+        <hr>
+        © 2020 - <a href="http://codewav.es/">Sebastián Solís</a>
+    </footer>
+
+</body>
+
+</html>
