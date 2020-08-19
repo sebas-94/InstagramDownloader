@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <title>Instagram Downloader</title>
     <link rel="shortcut icon" type="png" href="../logo.png" />
+    <!-- OpenGraph -->
+    <meta property="og:url" content="https://downloader-instagram.com/es/index.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Descarga fotos y vídeos de Instagram" />
+    <meta property="og:description"
+        content="La forma más fácil y rápida de descargar contenido multimendia desde Instagram." />
+    <meta property="og:image" content="https://downloader-instagram.com/logo.png" />
     <!-- AdSense -->
     <script data-ad-client="ca-pub-9111256785410220" async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -57,7 +64,7 @@
                 <h3>Modo Simple</h3>
             </div>
 
-            <div class="card-body">
+            <div class="card-body text-center">
                 <p class="card-text text-justify">La forma más sencilla y fácil, pero puede dar errores con los vídeos y
                     fotos de perfiles privados en caso de que no estés autenticado. <b>Funciona para:</b>
                 <ul class="text-left text-info">
@@ -69,7 +76,10 @@
                 <input type="text" id="inputUrl" class="form-control mt-2" autofocus=""
                     placeholder="Pega la URL de la publicación de Instagram aquí.">
 
-                <button class="btn btn-primary mt-3 " type="button" id="btnDonwload">Descargar</button>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary mt-3 " type="button" id="btnDonwload">Descargar</button>
+
+                </div>
 
             </div>
         </div>
@@ -103,9 +113,10 @@
 
                 <textarea id="contentPrivate" rows="5" class="form-control"></textarea>
 
-
-                <button class="btn btn-primary mt-3 " type="button" id="btnPrivateDonwload">Descargar contenido
-                    privado</button>
+                <div class="d-flex justify-content-center">
+                    <button class="btn btn-primary mt-3 " type="button" id="btnPrivateDonwload">Descargar contenido
+                        privado</button>
+                </div>
 
             </div>
 
