@@ -1,10 +1,36 @@
-footer {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+#title {
+    font-family: 'Satisfy';
+    font-size: 25px;
+    color: #711e92;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    background-image: linear-gradient(to bottom right, #f7524d, #ffcf51);
+}
+
+
+#card-h-1 {
+    background-color: rgba(103, 238, 164, 0.5);
+}
+
+#card-h-2 {
+    background-color: rgba(238, 123, 103, 0.5);
 }
 
 a {
     color: lightskyblue;
 }
+
+textarea {
+    resize: none;
+    width: 100%;
+}
+
+#btnDonwload, #step2, #contentPrivate, #btnPrivateDonwload {
+    display: none;
+}
+

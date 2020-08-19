@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <title>Instagram Downloader</title>
-    <link rel="shortcut icon" type="png" href="logo.png" />
-     <!-- AdSense -->
-     <script data-ad-client="ca-pub-9111256785410220" async
-     src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="shortcut icon" type="png" href="../logo.png" />
+    <!-- AdSense -->
+    <script data-ad-client="ca-pub-9111256785410220" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- jQuery y Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -20,10 +20,9 @@
         crossorigin="anonymous"></script>
     <!-- Font, CSS y JS -->
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="appOF.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <script src="../appOF.js"></script>
 </head>
-
 
 <body class="d-flex flex-column min-vh-100">
 
@@ -33,7 +32,7 @@
             <!-- Imagen y nombre marca -->
             <div class="navbar">
                 <a class="navbar-brand" href="#">
-                    <img src="logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
+                    <img src="../logo.png" width="40" height="40" class="d-inline-block align-top" alt="">
                     <span id="title" class="ml-1">Instagram Downloader</span>
                 </a>
             </div>
@@ -41,10 +40,10 @@
             <div class="dropdown">
                 <div class="btn normal-lined dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="true">
-                    English
+                    Español
                 </div>
                 <li class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="es/index.html">Español</a>
+                    <a class="dropdown-item" href="../index.html">English</a>
                 </li>
             </div>
         </div>
@@ -55,22 +54,22 @@
         <!-- Primera card -->
         <div class="card text-center">
             <div id="card-h-1" class="card-header">
-                <h3>Simple mode</h3>
+                <h3>Modo Simple</h3>
             </div>
 
             <div class="card-body">
-                <p class="card-text text-justify">The simplest and easiest way, but it can give errors with the videos
-                    and photos of private profiles in case you are not authenticated. <b>It works for:</b>
+                <p class="card-text text-justify">La forma más sencilla y fácil, pero puede dar errores con los vídeos y
+                    fotos de perfiles privados en caso de que no estés autenticado. <b>Funciona para:</b>
                 <ul class="text-left text-info">
-                    <li>Photos and videos of public profiles.</li>
-                    <li>Photos of private profiles (we must log in to Instagram).</li>
+                    <li>Fotos y vídeos de perfiles públicos.</li>
+                    <li>Fotos y vídeos de perfiles privados (debes estar logueado en Instagram).</li>
                 </ul>
                 </p>
 
                 <input type="text" id="inputUrl" class="form-control mt-2" autofocus=""
-                    placeholder="Paste the URL of the Instagram post here.">
+                    placeholder="Pega la URL de la publicación de Instagram aquí.">
 
-                <button class="btn btn-primary mt-3 " type="button" id="btnDonwload">Download</button>
+                <button class="btn btn-primary mt-3 " type="button" id="btnDonwload">Descargar</button>
 
             </div>
         </div>
@@ -82,32 +81,31 @@
         <div class="card text-center mt-5">
 
             <div id="card-h-2" class="card-header">
-                <h3>Manual mode (Private profiles)</h3>
+                <h3>Modo manual (Perfiles privados)</h3>
             </div>
 
             <div class="card-body">
                 <p class="card-text text-justify">
-                    In case the above mode causes problems for you. Used to download photos and videos from private
-                    profiles. <b>It works for:</b></p>
+                    En caso de que el modo anterior te cause problemas. Se utiliza para descargar fotos y videos de
+                    perfiles privados. <b>Funciona para:</b></p>
                 <ul class="text-left text-info">
-                    <li>Photos and videos, whether public or private. In the latter case, we must be authenticated from
-                        our browser.</li>
+                    <li>Fotos y videos, ya sean públicos o privados. En este último caso, debes estar autenticado
+                        desde el propio navegador.</li>
                 </ul>
 
-                <p id="step1" class="card-text mt-3"><b>1. Login to Instagram from this browser and paste the URL of the
-                        private post:</b></p>
+                <p id="step1" class="card-text mt-3"><b>1. Inicia sesión en Instagram desde este navegador y pega la URL
+                        de la publicación privada:</b></p>
                 <input type="text" id="inputPrivateUrl" class="form-control mt-1"
-                    placeholder="Paste the URL of the private Instagram post here.">
+                    placeholder="Pega la URL de la publicación privada de Instagram aquí.">
 
-                <p id="step2" class="card-text mt-3"><b>2. Open this <a id="linkPrivate">LINK</a> in another tab,
-                        COPY all the content of the new tab with [Ctrl + A, Ctrl + C] and PASTE
-                        it down here:</b></p>
+                <p id="step2" class="card-text mt-3"><b>2. Abre este <a id="linkPrivate">LINK</a> en otra pestaña,
+                        COPIA todo el contenido de la nueva pestaña [Ctrl + A, Ctrl + C] y PÉGALO aquí debajo:</b></p>
 
                 <textarea id="contentPrivate" rows="5" class="form-control"></textarea>
 
 
-                <button class="btn btn-primary mt-3 " type="button" id="btnPrivateDonwload">Download private
-                    content</button>
+                <button class="btn btn-primary mt-3 " type="button" id="btnPrivateDonwload">Descargar contenido
+                    privado</button>
 
             </div>
 
